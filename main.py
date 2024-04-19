@@ -5,10 +5,10 @@ import time
 import tkinter as tk
 from queue import Queue
 
-SLEEP_TIME = 10 # 10 sec
-SCREEN_TIME = 2400/SLEEP_TIME # 40min
+SLEEP_TIME = 10 # 10sec
+SCREEN_TIME = 1800/SLEEP_TIME # 30min
 ADD_MORE_TIME = 300/SLEEP_TIME # 5min
-RELAX_TIME = 300/SLEEP_TIME # 5min
+RELAX_TIME = 180/SLEEP_TIME # 3min
 
 
 def video_analysis(message_queue):
