@@ -39,7 +39,7 @@ def video_analysis(message_queue):
             print("Человек обнаружен в кадре.", in_camera_count, off_camera_count)
             if not notification_shown:
                 in_camera_count += 1
-                off_camera_count = max(off_camera_count - 1, 0)
+                off_camera_count = max(off_camera_count - 0.5, 0)
             if in_camera_count >= SCREEN_TIME and not notification_shown:
                 in_camera_count = 0
                 off_camera_count = 0
@@ -48,7 +48,7 @@ def video_analysis(message_queue):
         else:
             print("Человека нет в кадре.", in_camera_count, off_camera_count)
             off_camera_count += 1
-            in_camera_count = max(in_camera_count - 1, 0)
+            in_camera_count = max(in_camera_count - 0.5, 0)
             if notification_shown and off_camera_count >= RELAX_TIME:
                 off_camera_count = 0
                 message_queue.put("hide")
