@@ -24,15 +24,6 @@ https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4-tiny.cfg
 
 Все прекрасно работает и на CPU. Если всё устраивает, то можно использовать как есть.
 
-Руководство по установке OpenCV с поддержкой CUDA для Windows
-https://www.youtube.com/watch?v=d8Jx6zO1yw0
-https://www.youtube.com/watch?v=YsmhKar8oOc
-https://www.jamesbowley.co.uk/qmd/opencv_cuda_python_windows.html
-
-Таблица с версиями для указания в CUDA_ARCH_BIN
-https://en.wikipedia.org/wiki/CUDA#GPUs_supported
-
-
 Подготовка:
 1) Установить VisualStudio 2022 с отмеченными пакетами для десктопной разработки C++ приложений
 2) Установить CMake
@@ -43,3 +34,11 @@ https://en.wikipedia.org/wiki/CUDA#GPUs_supported
 7) Потом запускаем CMake и делаем всё, что рассказано в видосе https://www.youtube.com/watch?v=YsmhKar8oOc
 
 Важно использовать совместимые версии cuda, cudnn и video-code-sdk. На более новых версиях у меня были ошибки при сборке.
+
+Ссылки на руководства
+https://www.youtube.com/watch?v=d8Jx6zO1yw0
+https://www.youtube.com/watch?v=YsmhKar8oOc
+https://www.jamesbowley.co.uk/qmd/opencv_cuda_python_windows.html
+
+Таблица с версиями для указания в CUDA_ARCH_BIN
+https://en.wikipedia.org/wiki/CUDA#GPUs_supported
