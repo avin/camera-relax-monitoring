@@ -51,6 +51,14 @@ https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4.cfg
 Таблица с версиями для указания в CUDA_ARCH_BIN
 * https://en.wikipedia.org/wiki/CUDA#GPUs_supported
 
+Подготовка:
+
+```sh
+pip install cvlib tensorflow
+```
+
+Можно также использовать pipenv или окружения conda, но нужно будет пересобирать opencv под конкретный путь.
+
 Запуск:
 
 ```sh
