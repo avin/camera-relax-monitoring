@@ -11,10 +11,12 @@ ADD_MORE_TIME = 300 / SLEEP_TIME  # 5min
 RELAX_TIME = 180 / SLEEP_TIME  # 3min
 ENABLE_GPU = not not cv2.cuda.getCudaEnabledDeviceCount()
 
-SLEEP_TIME = .5  # 10sec
-SCREEN_TIME = 30  # 30min
-ADD_MORE_TIME = 10  # 5min
-RELAX_TIME = 10  # 3min
+#### Debugging options ####
+# SLEEP_TIME = .5  # 10sec
+# SCREEN_TIME = 30  # 30min
+# ADD_MORE_TIME = 10  # 5min
+# RELAX_TIME = 10  # 3min
+###########################
 
 print(f'ENABLE_GPU={ENABLE_GPU}')
 
