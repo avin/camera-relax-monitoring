@@ -5,6 +5,7 @@ import time
 import window
 from queue import Queue
 
+MODEL = 'yolov4'  # yolov4 | yolov4-tiny
 SLEEP_TIME = 10  # 10sec
 SCREEN_TIME = 1800 / SLEEP_TIME  # 30min
 ADD_MORE_TIME = 300 / SLEEP_TIME  # 5min
@@ -36,7 +37,7 @@ def video_analysis(message_queue):
         if not ret:
             continue
 
-        bbox, label, conf = cv.detect_common_objects(frame, model='yolov4-tiny', enable_gpu=ENABLE_GPU)
+        bbox, label, conf = cv.detect_common_objects(frame, model=MODEL, enable_gpu=ENABLE_GPU)
         if 'person' in label:
             print("Человек обнаружен в кадре.", in_camera_count, off_camera_count)
             if not notification_shown:
