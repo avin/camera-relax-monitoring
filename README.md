@@ -7,14 +7,14 @@
 
 ### Запуск на CPU
 
-Подготовка
+Подготовка:
 
 ```sh
 pip install pipenv
 pipenv install
 ```
 
-Запуск
+Запуск:
 
 ```sh
 ./run-pipenv.cmd
@@ -27,7 +27,7 @@ https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4-tiny.cfg
 https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4.cfg
 ```
 
-Положите его в `~\.cvlib\object_detection\yolo\yolov3\` (перезапишите имеющийся файл).
+Положить в `~\.cvlib\object_detection\yolo\yolov3\` (перезаписать имеющиеся).
 
 
 ## Запуск на GPU
@@ -43,15 +43,15 @@ https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4.cfg
 
 Важно использовать совместимые версии cuda, cudnn и video-code-sdk. На более новых версиях у меня были ошибки при сборке.
 
-Ссылки на руководства
-https://www.youtube.com/watch?v=d8Jx6zO1yw0
-https://www.youtube.com/watch?v=YsmhKar8oOc
-https://www.jamesbowley.co.uk/qmd/opencv_cuda_python_windows.html
+Ссылки на руководства:
+* https://www.youtube.com/watch?v=d8Jx6zO1yw0
+* https://www.youtube.com/watch?v=YsmhKar8oOc
+* https://www.jamesbowley.co.uk/qmd/opencv_cuda_python_windows.html
 
 Таблица с версиями для указания в CUDA_ARCH_BIN
-https://en.wikipedia.org/wiki/CUDA#GPUs_supported
+* https://en.wikipedia.org/wiki/CUDA#GPUs_supported
 
-Запуск
+Запуск:
 
 ```sh
 run-anaconda.cmd
