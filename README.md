@@ -5,24 +5,32 @@
 программа автоматически предложит сделать перерыв. Для сброса уведомления необходимо отойти от рабочего места
 на 3 минуты. После этого можно будет продолжить работу. Также предусмотрена функция отложить перерыв на 5 минут.
 
+### Запуск на CPU
+
+Подготовка
+
 ```sh
 pip install pipenv
 pipenv install
-pipenv run .\main.py
 ```
 
-Если есть ошибка при запуске - скачайте конфиг
+Запуск
+
+```sh
+./run-pipenv.cmd
+```
+
+Если есть ошибка при запуске - скачайте конфиг для yolov4 отсюда
 
 ```
 https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4-tiny.cfg
+https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4.cfg
 ```
 
 Положите его в `~\.cvlib\object_detection\yolo\yolov3\` (перезапишите имеющийся файл).
 
 
-## Enable GPU
-
-Все прекрасно работает и на CPU. Если всё устраивает, то можно использовать как есть.
+## Запуск на GPU
 
 Подготовка:
 1) Установить VisualStudio 2022 с отмеченными пакетами для десктопной разработки C++ приложений
@@ -42,3 +50,9 @@ https://www.jamesbowley.co.uk/qmd/opencv_cuda_python_windows.html
 
 Таблица с версиями для указания в CUDA_ARCH_BIN
 https://en.wikipedia.org/wiki/CUDA#GPUs_supported
+
+Запуск
+
+```sh
+run-anaconda.cmd
+```
